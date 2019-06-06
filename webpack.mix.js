@@ -1,7 +1,11 @@
 let mix = require('laravel-mix');
 require('mix-html-builder');
 
-mix.copyDirectory('resources/images', 'public/images');
+mix.options({
+    processCssUrls: false
+});
+
+mix.copyDirectory('resources/image', 'public/image');
 mix.copyDirectory('resources/fonts', 'public/fonts');
 mix.copyDirectory('resources/*.html', 'public/');
 

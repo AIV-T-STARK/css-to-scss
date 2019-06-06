@@ -1,0 +1,41 @@
+.btn {
+  display: inline-block;
+  padding: 8px 22px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+@mixin make-btn($color) {
+  color: $white;
+  background: $color;
+  border-color: $color;
+
+  &:hover {
+    color: $color;
+    background: transparent;
+    border-color: $color;
+  }
+}
+
+@mixin make-btn-outline($color) {
+  color: $color;
+  background: transparent;
+  border-color: $color;
+
+  &:hover {
+    color: #fff;
+    background: $color;
+    border-color: $color;
+  }
+}
+
+.btn-primary {
+  @include make-btn($btn-primary);
+}
+

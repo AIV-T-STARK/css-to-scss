@@ -1,0 +1,173 @@
+.card {
+  position: relative;
+  background: $white;
+
+  .card-body {
+    padding: $padding_card-body;
+    @include boxShadow();
+  }
+}
+
+.card-header {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.75rem;
+  justify-content: space-between;
+  position: relative;
+
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .card-menu {
+    flex-grow: 2;
+    text-align: right;
+    padding-right: 0.75rem;
+    display: none;
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 0.75rem;
+
+      a {
+        color: $dark-primary;
+      }
+    }
+  }
+
+  @include mediaMd {
+    .card-title {
+      font-size: 22px;
+    }
+  
+    .card-menu {
+      display: block;
+    }
+  }
+
+  .dots {
+    min-width: 50px;
+
+    .dot {
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      margin-left: 3px;
+    }
+
+    i {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+      line-height: 20px;
+      border-radius: 50%;
+      color: $white;
+      background: $smoke;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        background: $red;
+      }
+    }
+
+    .dot-left i {
+      padding-top: 1px;
+      padding-right: 2px;
+    }
+
+    .dot-right i {
+      padding-top: 1px;
+      padding-left: 2px;
+    }
+  }
+}
+
+.card-products {
+  padding-left: $padding_card-products;
+  padding-right: $padding_card-products;
+
+  .product {
+    display: none;
+
+    &.active {
+      display: block;
+      animation: fade-in 1s;
+    }
+
+    a {
+      color: $dark-primary;
+    }
+
+    .price {
+      color: $black;
+    }
+
+    .card-img {
+      margin-top: 1.5rem;
+
+      img {
+        height: 200px;
+      }
+    }
+
+    .card-desc {
+      position: relative;
+      text-align: center;
+      line-height: 1.85;
+      margin-top: 0.9rem;
+
+      p:first-child {
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        /* -webkit-box-orient: vertical; */
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      .price, .price-die {
+        line-height: 1.2;
+        display: block;
+      }
+
+      .price-die {
+        color: $light-white;
+        text-decoration: line-through;
+      }
+
+      @include mediaSm {
+        .price, .price-die {
+          line-height: 1.2;
+          display: inline;
+        }
+  
+        .price-die {
+          margin-right: 0.75rem;
+        }
+      }
+
+      .price {
+        font-weight: bold;
+      }
+
+      i {
+        color: $yellow;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
