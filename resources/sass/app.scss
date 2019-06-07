@@ -8,9 +8,14 @@
 
 @import "utils/variables";
 @import "utils/mixin";
+
 @import "base/base";
+
 @import "component/component";
 @import "component/gird_system";
 @import "component/button";
 @import "component/card";
-@import "layout/layout";
+
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
