@@ -29,13 +29,19 @@
   border-color: $color;
 
   &:hover {
+    //nếu mầu truyền vào là màu trắng thì bị lỗi
     color: #fff;
     background: $color;
-    border-color: $color;
   }
 }
 
-.btn-primary {
-  @include make-btn($btn-primary);
-}
 
+@each $key, $val in $theme-colors {
+  .btn-#{$key} {
+    @include make-btn($val);
+  }
+
+  .btn-outline-#{$key} {
+    @include make-btn-outline($val);
+  }
+}

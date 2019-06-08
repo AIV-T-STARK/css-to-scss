@@ -14,6 +14,9 @@
   }
 }
 
+.mid-footer {
+  background-color: $gray-5;
+}
 .mid-footer-content {
   padding: 45px 0;
 
@@ -50,7 +53,7 @@
   }
 
   a {
-    color: $light-white;
+    color: $gray-3;
 
     &:hover {
       text-decoration: underline !important;

@@ -33,7 +33,7 @@
       padding: 0 0.75rem;
 
       a {
-        color: $dark-primary;
+        color: $gray-4;
       }
     }
   }
@@ -66,7 +66,7 @@
       line-height: 20px;
       border-radius: 50%;
       color: $white;
-      background: $smoke;
+      background: $gray-2;
       text-align: center;
       cursor: pointer;
 
@@ -100,7 +100,7 @@
     }
 
     a {
-      color: $dark-primary;
+      color: $gray-4;
     }
 
     .price {
@@ -136,7 +136,7 @@
       }
 
       .price-die {
-        color: $light-white;
+        color: $gray-3;
         text-decoration: line-through;
       }
 

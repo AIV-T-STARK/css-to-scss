@@ -10,20 +10,18 @@
   color: $white !important;
 }
 
-.text-dark {
-  color: $light-white !important;
+.text-gray-3 {
+  color: $gray-3 !important;
 }
 
-.text-blue {
-  color: $blue !important;
+@each $key, $val in $theme-colors {
+  .text-#{$key} {
+    color: $val !important;
+  }
 }
 
 .bg-black {
-  background: $dark-tertiary;
-}
-
-.bg-dark {
-  background-color: $dark-secondary;
+  background-color: $gray-6;
 }
 
 .bg-white {
@@ -31,7 +29,13 @@
 }
 
 .bg-red {
-  background-color: #f10e34;
+  background-color: $red;
+}
+
+@each $key, $val in $theme-colors {
+  .bg-#{$key} {
+    background-color: $val;
+  }
 }
 
 .text-bold {
@@ -71,20 +75,40 @@
   justify-content: center;
 }
 
-.py-2 {
-  padding-top: $size-2 !important;
-  padding-bottom: $size-2 !important;
+@each $key, $val in $sizes {
+  .p-#{$key} {
+    padding: $val !important;
+  }
+  .py-#{$key} {
+    padding-top: $val !important;
+    padding-bottom: $val !important;
+  }
+  .px-#{$key} {
+    padding-left: $val !important;
+    padding-right: $val !important;
+  }
 }
 
-.m-7 {
-  margin: $size-7 !important;
-}
-.mb-7 {
-  margin-bottom: $size-7 !important;
-}
+@each $key, $val in $sizes {
+  .m-#{$key} {
+    margin: $val !important;
+  }
 
-.mt-6 {
-  margin-top: $size-6 !important;
+  .mt-#{$key} {
+    margin-top: $val !important;
+  }
+
+  .mb-#{$key} {
+    margin-bottom: $val !important;
+  }
+
+  .mr-#{$key} {
+    margin-right: $val !important;
+  }
+
+  .ml-#{$key} {
+    margin-left: $val !important;
+  }
 }
 
 .img-responsive {
