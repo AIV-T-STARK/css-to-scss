@@ -46,6 +46,7 @@ button {
   font-size: inherit;
   line-height: inherit;
   outline: none;
+  cursor: pointer;
 }
 
 input, textarea, select {
@@ -1089,6 +1090,9 @@ ul {
 .card-header .card-menu li a {
   color: #3d3d3d;
 }
+.card-header .card-menu li a:hover {
+  text-decoration: underline !important;
+}
 @media screen and (min-width: 768px) {
   .card-header .card-title {
     font-size: 22px;
@@ -1166,6 +1170,7 @@ ul {
   display: -webkit-box;
   text-overflow: ellipsis;
   overflow: hidden;
+  height: 1.85rem;
 }
 .card-products .product .card-desc .price, .card-products .product .card-desc .price-die {
   line-height: 1.2;
@@ -1351,8 +1356,8 @@ ul {
   transition: 0.2s;
 }
 .bottom-header-navbar a:hover {
-  background: #fff;
-  color: #f10e34;
+  background-color: #fff;
+  color: #f22f49;
 }
 .bottom-header-navbar .title {
   padding-left: 20px;
@@ -1388,18 +1393,21 @@ ul {
 #menu-category li:last-child > a {
   border-bottom: none;
 }
+#menu-category li:hover {
+  background: #f22f49;
+}
+#menu-category li:hover a, #menu-category li:hover i {
+  color: #fff;
+}
+#menu-category i {
+  padding-right: 20px;
+  color: #a6a6a6;
+}
 #menu-category a {
   display: block;
   padding: 14px 0;
   color: #212121;
   border-bottom: 1px solid #eaeaea;
-}
-#menu-category a:hover {
-  text-decoration: underline !important;
-}
-#menu-category i {
-  padding-right: 20px;
-  color: #a6a6a6;
 }
 
 .hero-banner {
@@ -1448,14 +1456,15 @@ ul {
   color: #fff;
 }
 
-.banner-bottom .banner-desc {
-  padding: 18px;
-}
 .banner-bottom .banner-desc a {
   color: #fff;
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 .banner-bottom .banner-desc a:hover {
-  text-decoration: underline;
+  background-color: #fff;
+  color: #f22f49;
 }
 .banner-bottom .banner-desc .title {
   font-weight: bold;
@@ -1486,6 +1495,9 @@ ul {
     color: #000;
     border-bottom: 1px solid #000;
     padding: 14px 0;
+  }
+  .bottom-header-navbar ul.show a:hover {
+    color: #f22f49;
   }
   .bottom-header-navbar ul.show li {
     display: block;
@@ -1657,7 +1669,7 @@ ul {
   color: #b6b6b6;
 }
 .mid-footer-content a:hover {
-  text-decoration: underline !important;
+  color: #fff;
 }
 .mid-footer-content .mid-footer-item {
   margin-top: 45px;
@@ -1672,7 +1684,7 @@ ul {
   text-align: center;
 }
 .mid-footer-content .mid-footer-item .cc a:hover i {
-  color: #b6b6b6;
+  color: #fff;
 }
 
 .bottom-footer {
@@ -1684,14 +1696,14 @@ ul {
   padding: 0 9px;
 }
 .bottom-footer ul li a {
-  color: #d3d3d3;
+  color: #ddd;
 }
 .bottom-footer ul li a:hover {
-  text-decoration: underline !important;
+  color: #fff;
 }
 .bottom-footer .coryright {
   margin-top: 30px;
-  color: #d3d3d3;
+  color: #ddd;
 }
 .bottom-footer .coryright span {
   display: inline-block;

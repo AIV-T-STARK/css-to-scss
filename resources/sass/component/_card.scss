@@ -34,6 +34,9 @@
 
       a {
         color: $gray-4;
+        &:hover {
+          text-decoration: underline !important;
+        }
       }
     }
   }
@@ -128,6 +131,7 @@
         display: -webkit-box;
         text-overflow: ellipsis;
         overflow: hidden;
+        height: 1.85rem;
       }
 
       .price, .price-die {

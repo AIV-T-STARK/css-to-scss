@@ -158,8 +158,7 @@
     transition: 0.2s;
 
     &:hover {
-      background: $white;
-      color: $red;
+      @include list-item-hover($white, $primary);
     }
   }
 
@@ -205,7 +204,20 @@
 
     &:last-child > a {
       border-bottom: none;
-    } 
+    }
+
+    &:hover {
+      background: $primary;
+
+      a, i {
+        color: $white;
+      }
+    }
+  }
+
+  i {
+    padding-right: 20px;
+    color: #a6a6a6;
   }
 
   a {
@@ -214,15 +226,6 @@
     
     color: $gray-5;
     border-bottom: 1px solid #eaeaea;
-
-    &:hover {
-      text-decoration: underline !important;
-    }
-  }
-
-  i {
-    padding-right: 20px;
-    color: #a6a6a6;
   }
 }
 
@@ -273,13 +276,15 @@
 
 .banner-bottom {
   .banner-desc {
-    padding: 18px;
 
     a {
       color: $white;
+      display: block;
+      padding-top: 18px;
+      padding-bottom: 18px;
 
       &:hover {
-        text-decoration: underline;
+        @include list-item-hover($white, $primary);
       }
     }
 
@@ -316,6 +321,10 @@
       color: $black;
       border-bottom: 1px solid $black;
       padding: 14px 0;
+
+      &:hover {
+        color: $primary;
+      }
     }
 
     li {

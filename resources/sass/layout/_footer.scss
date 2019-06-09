@@ -56,7 +56,7 @@
     color: $gray-3;
 
     &:hover {
-      text-decoration: underline !important;
+      color: $white;
     }
   }
   
@@ -74,7 +74,7 @@
     }
 
     .cc a:hover i {
-      color: #b6b6b6;
+      color: $white;
     }
   }
 }
@@ -87,17 +87,17 @@
     padding: 0 9px;
 
     a {
-      color: #d3d3d3;
+      color: $gray-2;
       
       &:hover {
-        text-decoration: underline !important;
+        color: $white;
       }
     }
   }
 
   .coryright {
     margin-top: 30px;
-    color: #d3d3d3;
+    color: $gray-2;
 
     span {
       display: inline-block;

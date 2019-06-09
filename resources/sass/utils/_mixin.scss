@@ -31,3 +31,8 @@
   background-position: center;
   background-size: cover;
 }
+
+@mixin list-item-hover($bg-color, $font-color) {
+  background-color: $bg-color;
+  color: $font-color;
+}
