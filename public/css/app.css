@@ -1166,8 +1166,8 @@ ul {
 }
 .card-products .product .card-desc p:first-child {
   -webkit-line-clamp: 1;
-  /* -webkit-box-orient: vertical; */
   -webkit-box-orient: vertical;
+  /* -webkit-box-orient: vertical; */
   display: -webkit-box;
   text-overflow: ellipsis;
   overflow: hidden;

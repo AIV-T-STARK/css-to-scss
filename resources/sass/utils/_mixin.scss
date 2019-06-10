@@ -36,3 +36,37 @@
   background-color: $bg-color;
   color: $font-color;
 }
+
+@mixin col-right {
+  flex: 0 0 73%;
+  max-width: 73%;
+}
+
+@mixin col-left {
+  flex: 0 0 27%;
+  max-width: 27%;
+}
+
+@mixin make-btn($color) {
+  color: $white;
+  background: $color;
+  border-color: $color;
+
+  &:hover {
+    color: $color;
+    background: transparent;
+    border-color: $color;
+  }
+}
+
+@mixin make-btn-outline($color) {
+  color: $color;
+  background: transparent;
+  border-color: $color;
+
+  &:hover {
+    //nếu mầu truyền vào là màu trắng thì bị lỗi
+    color: #fff;
+    background: $color;
+  }
+}

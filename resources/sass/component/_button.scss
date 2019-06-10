@@ -11,31 +11,6 @@
   cursor: pointer;
 }
 
-@mixin make-btn($color) {
-  color: $white;
-  background: $color;
-  border-color: $color;
-
-  &:hover {
-    color: $color;
-    background: transparent;
-    border-color: $color;
-  }
-}
-
-@mixin make-btn-outline($color) {
-  color: $color;
-  background: transparent;
-  border-color: $color;
-
-  &:hover {
-    //nếu mầu truyền vào là màu trắng thì bị lỗi
-    color: #fff;
-    background: $color;
-  }
-}
-
-
 @each $key, $val in $theme-colors {
   .btn-#{$key} {
     @include make-btn($val);
