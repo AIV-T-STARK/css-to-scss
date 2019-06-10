@@ -1416,7 +1416,7 @@ ul {
 }
 
 .banner-top {
-  background: url(/image/banner1.png);
+  background: url("../image/banner1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
