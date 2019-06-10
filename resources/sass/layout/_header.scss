@@ -236,7 +236,7 @@
 
 
 .banner-top {
-  background: url(/image/banner1.png);
+  background: url("../image/banner1.png");
   @include bg-default();
   height: 425px;
   width: 100%;
