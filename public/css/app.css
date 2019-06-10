@@ -1167,6 +1167,7 @@ ul {
 .card-products .product .card-desc p:first-child {
   -webkit-line-clamp: 1;
   /* -webkit-box-orient: vertical; */
+  -webkit-box-orient: vertical;
   display: -webkit-box;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -1416,7 +1417,6 @@ ul {
 }
 
 .banner-top {
-  background: url("../image/banner1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
